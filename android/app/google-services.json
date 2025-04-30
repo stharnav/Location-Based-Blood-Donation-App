@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065267023358",
+    "project_id": "medicalhelp-662f4",
+    "storage_bucket": "medicalhelp-662f4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065267023358:android:c91fec160c4a718015c4af",
+        "android_client_info": {
+          "package_name": "com.example.medical_help"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065267023358-p2ijqole4dp8j3dbjnfboo19h3d5nqk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvISrxq0n2YkyA7IsxQ05maUXdbLJHVfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065267023358-p2ijqole4dp8j3dbjnfboo19h3d5nqk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
