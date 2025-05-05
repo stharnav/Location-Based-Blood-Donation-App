@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_help/database/userdata.dart';
+import 'package:medical_help/pages/request_page.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
           children: [
             Card(
               child: ListTile(
-                title: Text('Hi '+Global_firstName, style: TextStyle(fontSize: 20),),
+                title: Text('Hi $Global_firstName', style: TextStyle(fontSize: 20),),
                 subtitle: Text('How can we help you today?'),
               ),
             ),
@@ -26,7 +27,9 @@ class HomePage extends StatelessWidget {
                 title: Text('My Requests', style: TextStyle(fontSize: 20),),
                 subtitle: Text('No request yet'),
                 trailing: Icon(Icons.keyboard_arrow_right),
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => RequestPage()));
+                },
               ),
             ),
            

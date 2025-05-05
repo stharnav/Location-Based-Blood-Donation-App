@@ -6,7 +6,7 @@ import 'package:medical_help/pages/edit_profile_page.dart';
 import 'package:medical_help/pages/password_reset_page.dart';
 
 class ProfilePage extends StatelessWidget {
-  ProfilePage({super.key});
+  const ProfilePage({super.key});
 
   void signOut(){
     FirebaseAuth.instance.signOut();
@@ -32,7 +32,7 @@ class ProfilePage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(Global_firstName+' '+Global_lastName, style: TextStyle(fontSize: 20),),
+                      Text('$Global_firstName $Global_lastName', style: TextStyle(fontSize: 20),),
                       Text(user.email as String),
                     ],
                   ),
@@ -61,9 +61,7 @@ class ProfilePage extends StatelessWidget {
               title: Text('Logout'),
               onTap: signOut,
             ),
-            ElevatedButton(onPressed: (){
-              fetchUserData();
-            }, child: Icon(Icons.abc))
+            
           ],
         ),
       ),
